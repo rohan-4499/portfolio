@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <!-- navigation menu -->
+     <nav>
+        <div class="nav-container">
+        <div class="logo"data-aos="fade-up" data-aos-duration="1100">Ro<span>han</span></div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="100"><a href="#">Home</a></div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="200"><a href="#skills">Skills</a></div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="300"><a href="#about">About</a></div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="400"><a href="#projects">Projects</a></div>
+        <div class="link"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="500"><a href="#content">Contact</a></div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="about">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+         </div>
+    </nav>
+<section>
+    <div class="main-container">
+        <div class="image"data-aos="zoom-in" data-aos-duration="1100" data-aos-delay="1500">
+            <img src="main.png" alt="">
+        </div>
+        <div class="content"id="home">
+            <h1 data-aos="fade-left"  data-aos-duration="1100" data-aos-delay="700">Hey I'm <span>Rohan</span></h1>
+            <div class="typewriter">I'm a <span class="typewriter-text"></span><label for=""></label></div>
+            <p>I design and develop responsive websites that are fast, clean, and user-focused.From layout to logic, I turn ideas into seamless digital experiences.Passionate about frontend tech, creative thinking, and continuous learning.</p>
+          <div class="social-links">
+                <a href="https://github.com/rohan-4499"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1200"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/rohant4499" target="_blank" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1300"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rohant4499@gmail.com"><i class="fas fa-envelope" data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1400"></i></a>
+                <a href="https://www.instagram.com/rohanz._?igsh=NnVzOGFlNGcxdnJy" target="_blank"data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1500"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="btn">
+                <button>Hire me</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section Start -->
+<section class="about" id="about">
+    <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+            <div class="left">
+                <img src="main1.png" alt="Rohan profile photo">
+            </div>
+            <div class="right">
+                <p class="about-text">
+                     I’m <span>Rohan</span>, a creative and detail-oriented <span>Web Designer & Developer</span> based in Chennai, India. I craft responsive websites that blend clean design with seamless functionality. Passionate about turning ideas into elegant and user-friendly digital experiences.
+                </p>
+
+
+                <div class="exp-area">
+                    <p class="exp">Speciality: <span>Frontend Web Development & UI Design</span></p>
+                    <p class="exp">Location: <span>Chennai, India</span></p>
+                    <p class="exp">Email: <span>rohant4499@gmail.com</span></p>
+                    <p class="exp">Phone: <span>+91 7358985455</span></p>
+                    <p class="exp">Freelance: <span>Available</span></p>
+                </div>
+                <div class="button">
+                    <a href="resume.pdf" target="_blank">
+                        <button class="resume-btn">View Resume 👀</button></a>
+                    <a href="resume.pdf" download>
+                        <button class="resume-btn">Download Resume 📄</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- My Skills Section Start -->
+ 
+
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+         <div class="text">
+            <div class="topic">Skills Refects Our Knowledge</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, delectus dolor vero cupiditate quam modi ad molestiae repellat excepturi non doloribus similique fuga quos, neque tenetur vel harum exercitationem dolorum?</p>
+            <div class="ecperience">
+                <div class="num">10</div>
+                <div class="exp">Years Of<br/> Experience
+                </div>
+            </div> 
+         </div> 
+         
+            <div class="boxes">
+                <div class="box skill-logo">
+                    <i class="devicon-html5-plain colored" style="font-size: 60px;"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="box skill-logo">
+                    <i class="devicon-css3-plain colored" style="font-size: 60px;"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="box skill-logo">
+                    <i class="devicon-javascript-plain colored" style="font-size: 60px;"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="box skill-logo">
+                    <i class="devicon-mysql-plain colored" style="font-size: 60px;"></i>
+                    <p>MySQL</p>
+                </div>
+                <div class="box skill-logo">
+                    <i class="devicon-java-plain colored" style="font-size: 60px;"></i>
+                    <p>Java</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+ <!-- My Sevice Section Start -->
+
+<section class="projects" id="projects">
+    <div class="content">
+        <div class="title"><span>My Projects</span></div>
+        <div class="boxes">
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-folder-open"></i></div>
+                    <div class="topic">Portfolio</div>
+                <p>This portfolio showcases my journey as a frontend developer — from creative UI designs to fully responsive, user-friendly websites. Built with 💻 HTML, CSS, JavaScript, and passion!</p>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fas fa-clipboard-list"></i></div>
+                <div class="topic">To-Do List</div>
+                <p>A responsive To-Do List web app where users can manage their tasks in real time. Developed using HTML, CSS, and vanilla JavaScript with interactive UI and local storage support.</p>
+            </div>
+           <div class="box">
+                <div class="icon"><i class="fas fa-cloud-sun"></i></div>
+                <div class="topic"><i class="fas fa-cloud-sun"></i> Weather App</div>
+                <p>A responsive weather forecasting app that shows real-time temperature, location-based weather details, and icons. Built using HTML, CSS, and JavaScript with OpenWeatherMap API integration.</p>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-laugh"></i></div>
+                <div class="topic">Random Jokes Generator</div>
+                <p>A fun project that fetches hilarious jokes from an API and displays them on button click. Built with HTML, CSS, and JavaScript using the Advice Slip or JokeAPI.</p></a>
+            </div>
+            <!-- <div class="box">
+                <div class="icon"><i class="fas fa-camera-retro"></i></div>
+                <div class="topic">Photography</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem animi totam eum, ad et culpa molestias accusamus repudiandae blanditiis saepe incidunt dolor deleniti, dignissimos porro fugit consequuntur officiis praesentium delectus!</p>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-tablet-alt"></i></div>
+                <div class="topic">App Development</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, at debitis aut ipsam maiores repellat ipsa ab quis molestiae perspiciatis? Quasi nostrum optio accusantium, eum amet aliquid iusto officia mollitia!</p>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Me Section Start -->
+
+
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="topic">Let’s Connect and Create! 🚀</div>
+      <p>Got a cool project in mind or looking to hire a passionate frontend developer? Drop a message — I’d love to hear from you and bring your ideas to life.</p>
+    </div>
+
+    <div class="contact-form-container">
+      <form class="contact-form" id="contact-form" autocomplete="off">
+        <label for="name">👤 Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">📧 Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+        <label for="phone">📱 Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 7358985455" required>
+
+        <label for="message">💬 Your Message</label>
+        <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit" class="contact-btn">📨 Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section Start -->
+
+
+<footer>
+    <div class="text">
+        <span>Created By <a href="#">Rohan</a> | &#169;2025 All Rights Reserved</span>
+    </div>
+</footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+  s
+<script>
+    function hamburg(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform='translateY(0px)'
+    }
+    function cancel(){
+        const navbar = document.querySelector(".dropdown")
+        navbar.style.transform='translateY(-500px)'
+    }
+</script>
+<script  src="main.js"></script>
+</body>
+</html>
