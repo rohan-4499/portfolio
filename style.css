@@ -252,30 +252,34 @@ section .main-container{
     box-shadow: 0 0 40px #077b32;
 }
 
-section .content{
+section .content {
     width: 80%;
     margin: 0px auto;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.about .about-details{
-    display:flex;
+
+.about .about-details {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-section .title{
+
+section .title {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
-section .title span{
+
+section .title span {
     color: white;
     font-size: 30px;
     font-weight: 600;
     position: relative;
     padding-bottom: 8px;
 }
+
 section .title span::before,
-section .title span::after{
+section .title span::after {
     content: '';
     position: absolute;
     height: 3px;
@@ -284,78 +288,93 @@ section .title span::after{
     left: 0;
     bottom: 0;
 }
-section .title span::after{
+
+section .title span::after {
     bottom: -7px;
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
-.about .about-details .left{
+
+.about .about-details .left {
     width: 45%;
 }
-.about .left img{
+
+.about .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 5px 50%;
     position: relative;
-    box-shadow:  0 0 20px 5px #077b32,0 0 40px 10px #077b32;
+    box-shadow: 0 0 20px 5px #077b32, 0 0 40px 10px #077b32;
 }
 
-
-
-.about-details .right{
+.about-details .right {
     width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    align-items: center; /* horizontally center content */
+    text-align: center; /* center text within each element */
+    gap: 15px; /* spacing between elements */
 }
 
-.right p span{
+.right p span {
     color: #077b32;
 }
 
-
-.about-details .right .exp-area{
+.about-details .right .exp-area {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center; /* center each line horizontally */
     color: white;
+    gap: 8px; /* space between each line */
 }
 
-.exp-area .exp{
+.exp-area .exp {
     font-size: 1.2rem;
 }
 
-section .topic{
+section .topic {
     color: white;
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
+
 .about-details .right p {
     text-align: justify;
     color: white;
 }
-section .button{
-    margin:1px 0;
+
+section .button {
+    margin: 1px 0;
+    display: flex;
+    justify-content: center; /* center the buttons */
+    gap: 20px;
+    width: 100%;
 }
-section .button button{
+
+section .button button {
     outline: none;
     width: fit-content;
-    border-radius: 10px;
-    padding: 1px 20px;
     border-radius: 4px;
+    padding: 1px 20px;
     font-size: 100%;
     font-weight: 400;
     background: #077b32;
     color: white;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: all 0.4 ease;
+    transition: all 0.4s ease;
 }
-section .button button:hover{
+
+section .button button:hover {
     border-color: #077b32;
     background-color: #fff;
     color: #077b32;
 }
+
 .resume-btn {
     padding: 10px 20px;
     background-color: #077b32;
@@ -374,6 +393,7 @@ section .button button:hover{
     border: 2px solid #077b32;
     box-shadow: 0 0 10px #077b32;
 }
+
 
 .skills{
     background: black;
