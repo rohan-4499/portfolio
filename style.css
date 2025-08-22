@@ -181,6 +181,8 @@ section .main-container{
 
 .content h1{
     font-size: clamp(1rem,1rem +5vw,1.8rem);
+    line-height: 1.2rem;
+
 }
 
 .content h1 span{
@@ -201,7 +203,8 @@ section .main-container{
 .content p{
     font-size: clamp(0.4rem,0.2rem + 9vw,1rem);
     margin:10px 0;
-    color: white; 
+    color: white;
+
 }
 
 .social-links i{
@@ -757,7 +760,8 @@ section .main-container{
   }
 
   .content p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   .skills-details .boxes .topic {
@@ -768,25 +772,76 @@ section .main-container{
     font-size: 1.5rem;
   }
 }
+@media (max-width: 968px) {
+  nav .logo {
+    position: relative; /* changed from absolute */
+    top: 0;
+    left: 15px;
+    font-size: 1.5rem;
+    z-index: 101; /* keep it on top */
+  }
 
+  .dropdown {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 60px; /* so dropdown menu does not overlap logo */
+  }
 
+  .nav-container .links {
+    display: none; /* keep desktop nav hidden */
+  }
 
+  .hamburg, .cancel {
+    opacity: 1;
+    pointer-events: auto;
+    right: 15px;
+    top: 15px;
+    position: absolute;
+    font-size: clamp(2rem, 0.5rem + 3vw, 3rem);
+    z-index: 102;
+  }
+}
+.nav-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-around;
+  align-items: center;
+}
 
+@media (max-width: 768px) {
+  .nav-container .links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Vertical stack */
+    width: 100%;
+    align-items: center;
+  }
+  /* Hamburger menu active styles handled separately */
+}
+@media (max-width: 768px) {
+  .about .about-details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .left img {
+    margin: 0 auto;
+  }
+}
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
+.project-link:hover .box {
+  background: #077b32;
+  color: white;
+  box-shadow: 0 0 30px 10px #077b32;
+  border-color: #077b32;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.project-link:hover .box .icon {
+  background-color: #fff;
+  color: #077b32;
+}
 

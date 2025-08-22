@@ -1,6 +1,6 @@
 // 👉 Typewriter Effect
 const typewriterText = document.querySelector(".typewriter-text");
-const titles = ["Web Developer", "Frontend Developer"];
+const titles = ["Web Developer", "Java Software Engineer"];
 let index = 0;
 let charIndex = 0;
 let isDeleting = false;
