@@ -448,14 +448,15 @@ section .button button:hover{
 }
 
 
-.projects .boxes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.projects .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Two equal columns */
+    gap: 20px; /* Space between boxes */
 }
-.projects .boxes .box{
-    margin: 20px 0;
-    width: calc(100% / 2 - 20px);
+
+.projects .boxes .box {
+    /* Remove width because grid defines the size */
+    margin: 0; /* Reset margin since gap handles spacing */
     text-align: center;
     border-radius: 12px;
     padding: 30px 10px;
@@ -465,13 +466,15 @@ section .button button:hover{
     border: 1px solid white;
     transition: all 0.4s ease;
 }
-.projects .boxes .box:hover{
+
+.projects .boxes .box:hover {
     background: #077b32;
-    border: 1px solid ;
+    border: 1px solid;
     box-shadow: 0 0 30px 10px #077b32;
     color: #fff;
 }
-.projects .boxes .box .icon{
+
+.projects .boxes .box .icon {
     height: 50px;
     width: 50px;
     background: #077b32;
@@ -483,19 +486,18 @@ section .button button:hover{
     margin: 0 auto 10px auto;
     transition: all 0.4s ease;
 }
-.boxes .box:hover .icon{
+
+.boxes .box:hover .icon {
     background-color: #fff;
     color: #077b32;
 }
+
 .projects .boxes .box:hover .topic,
-.projects .boxes .box:hover p{
+.projects .boxes .box:hover p {
     color: white;
     transition: all 0.4s ease;
 }
-.projects .boxes .box:hover .topic,
-.projects .boxes .box:hover p{
-    color: #fff;
-} 
+ 
 /* Contact Me Css */
 .contact{
     background:black;
@@ -843,5 +845,10 @@ section .main-container{
 .project-link:hover .box .icon {
   background-color: #fff;
   color: #077b32;
+}
+@media (max-width: 768px) {
+  .projects .boxes {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
 }
 
